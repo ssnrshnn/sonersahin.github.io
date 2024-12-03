@@ -1,4 +1,4 @@
-baseURL = 'https://sonersahin.github.io'
+baseURL = 'https://sonersahin.github.io/public'
 languageCode = 'en-us'
 title = 'Soner Sahin'
 theme = 'typo'
