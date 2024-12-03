@@ -1,0 +1,111 @@
+baseURL = 'https://sonersahin.github.io'
+languageCode = 'en-us'
+title = 'Soner Sahin'
+theme = 'typo'
+
+# # # Disable tags
+# disableKinds = ['taxonomy']
+
+[taxonomies]
+tag = 'tags'
+
+[params]
+# Home meta description
+description = "Just a blog."
+
+# Appearance settings
+theme = 'auto'
+colorPalette = 'default'
+hideHeader = false
+
+# Intro on main page, content in markdown
+homeIntroTitle = '🎖️Welcome Aboard'
+homeIntroContent = """
+Hello, I’m Soner from Turkey. I prefer working with the CLI rather than 
+GUI. On this site, I share my expertise in various technologies, insights into 
+newly learned tools, as well as details of the projects I have completed and those 
+I plan to undertake. I run this blog with the motivation to learn, have fun, and help 
+others along the way.
+"""
+
+singleDateFormat = '2 Jan 2006'
+
+# Collection to display on home
+# homeCollectionTitle = 'Posts'
+# homeCollection = 'posts'
+
+# Lists parameters
+paginationSize = 100
+listSummaries = true
+listDateFormat = '02 Jan 2006'
+
+# Breadcrumbs
+breadcrumbs = true
+
+showFooter = true
+# footerContent = """Custom"""
+
+# Social icons
+[[params.social]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/soner-sahin-943262174/"
+
+[[params.social]]
+name = "github"
+url = "https://github.com/ssnrshnn"
+
+[[params.social]]
+name = "x"
+url = "https://x.com/sonersahin1881"
+
+[[params.social]]
+name = "gmail"
+url = "mailto:sonera171@gmail.com"
+
+# Main menu pages
+[[params.menu]]
+name = "home"
+url = "/"
+
+[[params.menu]]
+name = "posts"
+url = "/posts"
+
+[[params.menu]]
+name = "about"
+url = "/about"
+
+[[params.menu]]
+name = "library"
+url = "/library"
+
+# Main menu pages
+[[params.menu]]
+name = "tags"
+url = "/tags"
+
+# Syntax highligth on code blocks
+[markup]
+[markup.highlight]
+style = 'bw'
+
+# Deploy settings
+
+[[deployment.matchers]]
+pattern = "^.+\\.(js|css|svg|ttf|woff2)$"
+cacheControl = "max-age=31536000, no-transform, public"
+gzip = true
+
+[[deployment.matchers]]
+pattern = "^.+\\.(png|jpg|gif|webp)$"
+cacheControl = "max-age=31536000, no-transform, public"
+gzip = false
+
+[params.giscus]
+enable = false
+repo = "ssnrshnn/sonersahin.github.io"
+repoid = ""
+category = "General"
+categoryid = ""
+mapping = ""
+theme = ""
